@@ -34,7 +34,7 @@ body {
 }
 
 .carousel-indicators {
-  bottom: 50px;
+  bottom: 0;
 }
 
 .nav-item,
@@ -63,7 +63,7 @@ body {
   right: 0;
   bottom: 0;
   position: absolute;
-  background: url(../images/background.jpg) 50% -20% no-repeat;
+  background: url(../images/background.jpg) 50% -56px no-repeat;
   filter: blur(3px) grayscale(0.66);
   opacity: 0.3;
   background-size: cover;

@@ -3,8 +3,8 @@ extends layout
 block content
   .animsition.h-100(data-animsition-in-class="fade-in-right-lg", data-animsition-in-duration="500", data-animsition-out-class="fade-out-right-lg", data-animsition-out-duration="750")
     .container.mt-5
-      .name-title(style='height: 100%')
+      .name-title
         .display-3.title-header.text-white.text-right My Projects
         hr.my-2.bg-faded.justify-content-end.mr-0(width='600')
         .subtitle-header.text-white.text-right A COLLECTION OF SWEAT, PAIN AND LOVE
-    include ./includes/carousel
+      include ./includes/carousel
