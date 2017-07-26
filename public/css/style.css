@@ -1,0 +1,141 @@
+@font-face {
+  font-family : "GZA";
+  src         : url(../fonts/gza-seminegra-webfont.ttf);
+}
+
+@font-face {
+  font-family : "Relative";
+  src         : url(../fonts/Relative-Book.ttf);
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slide-container {
+  width: 100vw;
+  height: 375px;
+}
+
+.carousel-inner {
+  position: relative;
+}
+
+#carousel-index {
+  position: absolute;
+  top: -10px;
+  right: 0;
+}
+
+.slide-container img {
+  border: 3px rgba(255,255,255,0.3) double;
+  box-shadow: 12px 12px 20px -5px rgba(0, 0, 0, 0.35);
+}
+
+.carousel-indicators {
+  bottom: 50px;
+}
+
+.nav-item,
+.biography {
+  font-family: "Relative";
+  letter-spacing: 1px;
+}
+
+.nav-item {
+  letter-spacing: 3px;
+}
+
+.title-header {
+  font-family: "GZA";
+}
+
+.subtitle-header {
+  font-family: "Relative";
+  letter-spacing: 10px;
+}
+
+.background-img::before {
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background: url(../images/background.jpg) 50% -20% no-repeat;
+  filter: blur(3px) grayscale(0.66);
+  opacity: 0.3;
+  background-size: cover;
+}
+
+.social-links {
+  width: 100vw;
+  list-style: none;
+  text-align: center;
+  position: fixed;
+  bottom: 75px;
+}
+
+.social-links svg {
+  fill: #fff;
+  transform: scale(0.9);
+  transition: all .25s ease-in-out;
+}
+
+#mail svg {
+  transform: scale(0.6)
+}
+
+#facebook:hover svg {
+  fill: #4867aa;
+  transform: scale(1)
+}
+
+#twitter:hover svg {
+  fill: #1da1f2;
+  transform: scale(1)
+}
+
+#github:hover svg {
+  fill: #6f2c84;
+  transform: scale(1)
+
+}
+
+#mail:hover svg {
+  fill: #cccccc;
+  transform: scale(0.7)
+}
+
+.social-links li {
+  display: inline-block;
+}
+
+.social-links li a:link {
+  color: inherit;
+}
+
+.social-links li a:visited {
+  color: inherit;
+}
+
+.social-links li a:hover {
+  color: inherit;
+  text-decoration: none
+}
+
+.puff-in-center {
+	-webkit-animation: puff-in-center 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.5s both;
+	        animation: puff-in-center 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.5s both;
+}
+
+.scale-in-hor-center {
+	-webkit-animation: scale-in-hor-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+	        animation: scale-in-hor-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+}
+
+.scale-in-ver-top {
+	-webkit-animation: scale-in-ver-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s both;
+	        animation: scale-in-ver-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s both;
+}

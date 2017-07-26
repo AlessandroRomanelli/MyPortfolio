@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  .animsition.h-100(data-animsition-in-class="fade-in", data-animsition-in-duration="500", data-animsition-out-class="fade-out", data-animsition-out-duration="750")
+    .row.h-50.align-items-end
+      .col-12
+        .name-title(style='height: 100%')
+          .display-3.text-center.title-header.text-white.puff-in-center Alessandro Romanelli
+          hr.mt-0.mb-2.bg-faded.scale-in-hor-center(width='700')
+          .text-center.subtitle-header.text-white.scale-in-ver-top FULL-STACK JAVASCRIPT WEB DEVELOPER
+    ul.social-links.text-white.d-flex.flex-row.justify-content-around.col-8.offset-2.biography
+      li 
+        a#facebook(href="https://www.facebook.com/ltromanelli" target="_blank")
+          include ../public/images/facebook.svg
+          p.mt-1 ltromanelli
+      li 
+        a#twitter(href="https://twitter.com/redbyteWant3D" target="_blank")
+          include ../public/images/twitter.svg
+          p.mt-1 @redbyteWant3D
+      li 
+        a#github(href="https://github.com/AlessandroRomanelli/" target="_blank")
+          include ../public/images/github.svg
+          p.mt-1 AlessandroRomanelli
+      li 
+        a#mail(href="mailto: aleromrod@gmail.com")
+          include ../public/images/mail.svg
+          p.mt-1 aleromrod@gmail.com
+      
