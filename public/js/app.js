@@ -42,6 +42,8 @@ $(document).ready(function() {
   $(".animsition").animsition({
     inClass: 'fade-in',
     outClass: 'fade-out',
+    timeout: true,
+    timeoutCountdown: 2500,
     inDuration: 1500,
     outDuration: 800,
     linkElement: '.animsition-link',
